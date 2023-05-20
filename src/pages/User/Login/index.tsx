@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next';
 
 function Login() {
+  const { t } = useTranslation();
   return (
     <>
-      <h1>Login</h1>
+      <h1>{t('login')}</h1>
     </>
   );
 }

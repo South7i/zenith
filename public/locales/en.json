@@ -1,0 +1,8 @@
+{
+  "home": "Home",
+  "login": "Login",
+  "greeting": "Hello, {{name}}!",
+  "currentTime": "Current time is {{time, DD/MM/YY}}",
+  "day_one": "{{count}} day",
+  "day_other": "{{count}} days"
+}

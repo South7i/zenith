@@ -1,0 +1,7 @@
+{
+  "home": "家",
+  "login": "登入",
+  "greeting": "你好，{name}！",
+  "currentTime": "而家時間係 {{time, YYYY-MM-DD}}",
+  "day": "{{count}} 天"
+}

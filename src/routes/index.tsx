@@ -30,7 +30,7 @@ const generateRouter = (routers: any) => {
       item.children = generateRouter(item.children);
     }
     item.element = <Suspense fallback={
-      <div>加载中...</div>
+      <div>loading...</div>
     }>
       {/* 把懒加载的异步路由变成组件装载进去 */}
       {
