@@ -50,7 +50,7 @@ module.exports = {
     }
   ],
   scopes: [
-    { name: "Module" }
+    { name: "module" }
   ],
   messages: {
     type: '请选择提交类型(必填)',
