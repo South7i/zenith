@@ -1,11 +1,23 @@
 import { useTranslation } from 'react-i18next';
 import dayjs from 'dayjs';
 
+import { useCurrentUser } from '@/hooks/useAccount';
+
 function Home() {
   const { t, i18n } = useTranslation();
 
+  const { data, isLoading, isFetching, error } = useCurrentUser();
+
+  if (isLoading) return '用户信息 Loading...';
+
+  if (error) return 'An error has occurred: ' + error;
+
   const handleLanguageChange = (lng: string) => {
     i18n.changeLanguage(lng);
+  };
+
+  const handleGetUserInfo = () => {
+    console.log(typeof data, data, isLoading, isFetching, error); // 输出用户信息到控制台
   };
 
   return (
@@ -30,6 +42,10 @@ function Home() {
       <p>
         {t('day', { count: 3})}
       </p>
+
+      <div>
+        <button onClick={handleGetUserInfo}>打印用户信息</button>
+      </div>
 
     </>
   );
