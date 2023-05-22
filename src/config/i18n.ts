@@ -25,11 +25,11 @@ i18n
     }
   });
 
-i18n.services.formatter?.add('DD/MM/YY', (value, lng, options) => {
+i18n.services.formatter?.add('DD/MM/YY', (value) => {
   return dayjs(value).format('DD/MM/YY');
 });
 
-i18n.services.formatter?.add('YYYY-MM-DD', (value, lng, options) => {
+i18n.services.formatter?.add('YYYY-MM-DD', (value) => {
   return dayjs(value).format('YYYY-MM-DD');
 });
 

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "report": "vite build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./",
     "preview": "vite preview",
     "commit": "git-cz",
@@ -41,6 +42,7 @@
     "lint-staged": "^13.2.2",
     "mockjs": "^1.1.0",
     "prettier": "^2.8.8",
+    "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.62.1",
     "stylelint": "^15.6.0",
     "stylelint-config-prettier": "^9.0.5",
@@ -50,7 +52,8 @@
     "stylelint-config-standard": "^33.0.0",
     "stylelint-order": "^6.0.3",
     "typescript": "^5.0.2",
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "vite-plugin-compression": "^0.5.1"
   },
   "config": {
     "commitizen": {
